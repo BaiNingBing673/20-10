@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17152e">
+  <title>20/10.exe — Hội Chị Em</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <main class="game-shell">
+    <header class="game-header">
+      <div class="pixel-logo">20<span>/10</span>.exe</div>
+      <div class="header-tag">GIRLS ONLY? MAYBE.</div>
+    </header>
+
+    <div class="status-bar">
+      <span><i class="status-dot"></i> SYSTEM ONLINE</span>
+      <span id="systemStatus">WAITING PLAYER...</span>
+    </div>
+
+    <section id="intro" class="screen active">
+      <div class="pixel-art" aria-hidden="true">
+        <div class="pixel-sun"></div>
+        <div class="pixel-cloud cloud-one"></div>
+        <div class="pixel-cloud cloud-two"></div>
+        <div class="pixel-character">
+          <div class="character-hair"></div>
+          <div class="character-face">
+            <span></span><span></span>
+          </div>
+          <div class="character-body"></div>
+        </div>
+        <div class="pixel-ground"></div>
+        <div class="pixel-flower flower-one">✿</div>
+        <div class="pixel-flower flower-two">✿</div>
+      </div>
+
+      <p class="eyebrow">★ SPECIAL EVENT: 20.10 ★</p>
+      <h1>NHIỆM VỤ<br><span>HỘI CHỊ EM</span></h1>
+      <p class="description">
+        Hệ thống đã phát hiện một nhóm nữ sinh có dấu hiệu
+        hoạt động bất thường: cười trong giờ, than bài tập
+        và sống sót nhờ deadline.
+      </p>
+
+      <div class="dialog-box">
+        <span class="dialog-name">SYSTEM</span>
+        <p>Người chơi đã được chọn. Không thể từ chối nhiệm vụ.</p>
+      </div>
+
+      <div class="pixel-stats">
+        <div><span>LEVEL</span><strong>20</strong></div>
+        <div><span>MOOD</span><strong>???</strong></div>
+        <div><span>DRAMA</span><strong>MAX</strong></div>
+      </div>
+
+      <button id="startBtn" class="pixel-btn">▶ BẮT ĐẦU NHIỆM VỤ</button>
+      <p class="tiny-note">PRESS START TO LOSE YOUR SANITY</p>
+    </section>
+
+    <section id="quiz" class="screen">
+      <div class="level-row">
+        <span id="levelLabel">STAGE 01</span>
+        <span id="questionCount">01 / 03</span>
+      </div>
+
+      <div class="progress-track">
+        <div id="progressBar" class="progress-fill"></div>
+      </div>
+
+      <div class="quest-label">QUEST LOG UPDATED!</div>
+      <h2 id="questionTitle">Đang tải câu hỏi...</h2>
+      <p id="questionDesc" class="question-desc"></p>
+
+      <div id="answerList" class="answer-list"></div>
+
+      <div id="feedback" class="feedback" aria-live="polite"></div>
+
+      <button id="nextBtn" class="pixel-btn hidden">TIẾP TỤC ▶</button>
+    </section>
+
+    <section id="result" class="screen">
+      <div class="result-icon" id="resultIcon">🏆</div>
+      <p class="eyebrow">MISSION REPORT</p>
+      <h2 id="resultTitle">DANH HIỆU CỦA BẠN</h2>
+      <div class="rank-card">
+        <div class="rank-label">PLAYER CLASS UNLOCKED</div>
+        <div id="rankName" class="rank-name">BÀ HOÀNG BẤT ỔN</div>
+        <p id="resultText"></p>
+      </div>
+
+      <div class="achievement">
+        <span>★ ACHIEVEMENT UNLOCKED</span>
+        <strong id="achievementText">Đã sống sót đến đây</strong>
+      </div>
+
+      <button id="twistBtn" class="pixel-btn">NHẬN PHẦN THƯỞNG 🎁</button>
+    </section>
+
+    <section id="twist" class="screen">
+      <div class="error-code">ERROR 404: GIFT NOT FOUND</div>
+      <div class="glitch-icon" aria-hidden="true">☠</div>
+      <p class="eyebrow">SECRET ENDING UNLOCKED</p>
+      <h2>CHÚC MỪNG!</h2>
+      <p class="description">
+        Bạn đã hoàn thành nhiệm vụ đặc biệt của ngày 20/10.
+        Phần thưởng của bạn là...
+      </p>
+
+      <div class="fake-gift">
+        <div class="gift-box">🎁</div>
+        <p id="twistMessage" class="twist-message">
+          ĐANG GIẢI MÃ PHẦN THƯỞNG...
+        </p>
+      </div>
+
+      <div id="finalReveal" class="final-reveal hidden">
+        <div class="reveal-title">🎉 PHẦN THƯỞNG ĐÃ MỞ 🎉</div>
+        <p>
+          <strong>01 chiếc deadline</strong><br>
+          kèm combo bài tập chưa làm,
+          vở chưa chép và câu “mai kiểm tra nhé”.
+        </p>
+        <p class="final-blessing">
+          Đùa thôi! Chúc các bà 20/10 vui vẻ, học hành thuận lợi,
+          điểm số ổn áp, ví tiền không bốc hơi và gặp toàn chuyện vui.
+          Hết cứu thì nhớ cứu nhau. 💾
+        </p>
+        <div class="stamp">CERTIFIED<br>GIRL BOSS</div>
+        <button id="replayBtn" class="pixel-btn">↻ CHƠI LẠI</button>
+      </div>
+
+      <button id="revealBtn" class="pixel-btn">MỞ QUÀ NGAY 💥</button>
+    </section>
+
+    <footer class="game-footer">
+      <span>© 20/10.EXE</span>
+      <span>MADE FOR THE GIRLS IN CLASS</span>
+    </footer>
+  </main>
+
+  <div id="toastLayer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
